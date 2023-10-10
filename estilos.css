@@ -1,0 +1,117 @@
+
+
+* {
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  .Subtitulo {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra con posición (2px, 2px), desenfoque 4px, y color rgba(0, 0, 0, 0.5) */
+  }
+  
+  hr {
+    margin-bottom: 20px;
+  }
+  
+  /* Fuente para el título */
+  h1 {
+    font-family: 'Russo One', sans-serif;
+  }
+  
+  /* Enlaces no visitados */
+  a {
+    color: #0077FF;
+    text-decoration: none;
+  }
+  
+  /* Enlaces visitados */
+  a:visited {
+    color: #070202;
+  }
+  
+  /* Estilo del encabezado */
+  header {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #28515c;
+    color: #070202;
+    padding: 3rem;
+  }
+  
+  /* Estilo del enlace WhatsApp */
+  #whatsapp {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  /* Estilo del cuerpo */
+  body {
+    font-size: 20px;
+    background-color: #ced9dc;
+    font-family: 'Russo One', sans-serif;
+    padding: 0;
+  }
+  
+  /* Margen superior para el cuadro de entrada */
+  form {
+    margin-top: 100px;
+  }
+  
+  /* Tamaño y transición de transformación para los logos */
+  #logofoto, #logos {
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Aplica la misma animación de rotación a todos los logos al pasar el mouse */
+  #logofoto:hover, #logos:hover {
+    transform: rotate(10deg);
+  }
+  
+  /* Estilo para la sección de búsqueda */
+  .busqueda-section {
+    font-family: 'Russo One', sans-serif;
+    font-weight: normal; /* Reduce la negrita de la fuente */
+  }
+  
+  /* Estilo para los enlaces con apariencia de botones */
+  .boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000406;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto de cambio de color al pasar el mouse sobre los botones */
+  .boton-enlace:hover {
+    background-color: #e60909;
+  }
+  
+  /* Margen superior para los logos */
+  #logos {
+    margin-top: 50px;
+  }
+
+  
+  #goleschamp {
+    margin: 30px;
+  }
+  
