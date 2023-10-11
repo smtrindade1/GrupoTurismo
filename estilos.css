@@ -1,117 +1,155 @@
 
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      text-align: center;
+      list-style: none;
+    }
+    
+      /* Estilo del cuerpo */
+      body {
+        font-size: 20px;
+        background-color: #0e2d3d;
+        font-family: 'Russo One', sans-serif;
+        margin: 0 auto;
 
-* {
-    text-decoration: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-weight: normal;
-  }
+      }
+    
+    hr {
+      margin-bottom: 20px;
+    }
+    
+    /* Fuente para el título */
+    h1 {
+      font-family: 'Russo One', sans-serif;
+    }
+    
+    /* Enlaces no visitados */
+    a {
+      color: #0077FF;
+      text-decoration: none;
+    }
   
-  .Subtitulo {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra con posición (2px, 2px), desenfoque 4px, y color rgba(0, 0, 0, 0.5) */
-  }
-  
-  hr {
-    margin-bottom: 20px;
-  }
-  
-  /* Fuente para el título */
-  h1 {
-    font-family: 'Russo One', sans-serif;
-  }
-  
-  /* Enlaces no visitados */
-  a {
-    color: #0077FF;
-    text-decoration: none;
-  }
-  
-  /* Enlaces visitados */
-  a:visited {
-    color: #070202;
-  }
-  
+    
   /* Estilo del encabezado */
   header {
-    font-size: 50px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #28515c;
+    font-size: 1px;
+    background-color: #ffffff;
     color: #070202;
-    padding: 3rem;
-  }
-  
-  /* Estilo del enlace WhatsApp */
-  #whatsapp {
-    height: 100px;
-    width: 100px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-  }
-  
-  /* Estilo del cuerpo */
-  body {
-    font-size: 20px;
-    background-color: #ced9dc;
-    font-family: 'Russo One', sans-serif;
-    padding: 0;
-  }
-  
-  /* Margen superior para el cuadro de entrada */
-  form {
-    margin-top: 100px;
-  }
-  
-  /* Tamaño y transición de transformación para los logos */
-  #logofoto, #logos {
-    width: 150px;
-    height: 150px;
-    margin-right: 50px;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Aplica la misma animación de rotación a todos los logos al pasar el mouse */
-  #logofoto:hover, #logos:hover {
-    transform: rotate(10deg);
-  }
-  
-  /* Estilo para la sección de búsqueda */
-  .busqueda-section {
-    font-family: 'Russo One', sans-serif;
-    font-weight: normal; /* Reduce la negrita de la fuente */
-  }
-  
-  /* Estilo para los enlaces con apariencia de botones */
-  .boton-enlace {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000406;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    margin: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Efecto de cambio de color al pasar el mouse sobre los botones */
-  .boton-enlace:hover {
-    background-color: #e60909;
-  }
-  
-  /* Margen superior para los logos */
-  #logos {
-    margin-top: 50px;
+    padding: 0.1rem;
+    position: fixed; /* Establece el encabezado como fijo */
+    top: 0; /* Lo mantiene en la parte superior de la pantalla */
+    width: 100%; /* Hace que el encabezado ocupe todo el ancho de la pantalla */
+    z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
   }
 
-  
-  #goleschamp {
-    margin: 30px;
+    
+    /* Tamaño y transición de transformación para los logos */
+    #logofoto, #logos {
+      width: 150px;
+      height: 150px;
+      margin-right: 50px;
+      transition: transform 0.3s ease;
+    }
+    
+    /* Aplica la misma animación de rotación a todos los logos al pasar el mouse */
+    #logofoto:hover, #logos:hover {
+      transform: rotate(10deg);
+    }
+    
+    /* Estilo para la sección de búsqueda */
+    .busqueda-section {
+      font-family: 'Russo One', sans-serif;
+      font-weight: normal; /* Reduce la negrita de la fuente */
+    }
+    
+    /* Estilo para los enlaces con apariencia de botones */
+    .boton-enlace {
+      display:inline-block; 
+      padding: 10px 20px;
+      background-color: #000406;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 18px;
+      margin: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+    }
+    
+    /* Efecto de cambio de color al pasar el mouse sobre los botones */
+    .boton-enlace:hover {
+      background-color: #e60909;
+    }
+    
+   
+
+    
+    /* Estilo del contenedor del encabezado */
+  .header-container {
+    position: fixed absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    max-width: 60%;
   }
-  
+
+  /* Estilo del título "Web-de-Turismo" */
+  h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px; /* Ajusta el tamaño del título según tus preferencias */
+    margin-left: 20px; /* Añade un margen izquierdo para separarlo del logotipo */
+  }
+
+  /* Ajusta el tamaño del logotipo */
+  #logofoto {
+    width: 100px; /* Ajusta el tamaño del logotipo según tus preferencias */
+    height: auto; /* Mantén la relación de aspecto */
+  }
+
+  /* Alinea el título a la izquierda */
+  header {
+    text-align: left;
+  }
+
+  /* Estilo del footer */
+  footer {
+    background-color: #000406;
+    color: #06b6f6;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+/* Estilo para los contenedores de las secciones en el footer */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* Estilo para los enlaces en el footer */
+ul li a {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px 5px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* Efecto de cambio de color al pasar el mouse sobre los enlaces del footer */
+ul li a:hover {
+  color: #e60909;
+}
+
+/* Estilo para los títulos en el footer */
+h4 {
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
