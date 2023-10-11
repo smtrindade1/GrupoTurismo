@@ -122,7 +122,7 @@
     background-color: #000406;
     color: #06b6f6;
     padding: 10px 0;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
   }
