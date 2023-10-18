@@ -1,12 +1,9 @@
-
-
-  * {
-  margin: 0;
+* {
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
   text-align: center;
   list-style: none;
+  white-space: nowrap
   }
 
   /* Estilo del cuerpo */
@@ -18,20 +15,17 @@
   header {
   background-color: #ffffff;
   color: #070202;
-  padding: 0.1rem;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 1;
   display: flex;
-    padding: 10px; /* Añade espacio alrededor del encabezado */
   }
 
   /* Tamaño y transición de transformación para los logos */
   #logofoto {
   width: 150px;
   height: 150px;
-  margin-right: 20px;
+  
+  
   transition: transform 0.3s ease;
   }
 
@@ -41,19 +35,21 @@
   }
 
   /* Estilo del título "Web-de-Turismo" */
-  h1 {
+h1 {
     font-family: 'Russo One', sans-serif;
     font-size: 44px; /* Ajusta el tamaño del título según tus preferencias */
-    margin-left: 10px; /* Añade un margen izquierdo para separarlo del logotipo */
     align-items: center;
     white-space: nowrap; /* Evita que el texto se divida en dos líneas */
-    }
+    margin-right: 140px;
+     }
+
     /* Estilo de los botones en el encabezado */
 .Menu {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: flex-end; /* Mueve los botones hacia la derecha del encabezado */
-  padding-left: 40%;
+  margin-right: 300px;
 }
 
 .boton-enlace {
@@ -99,12 +95,14 @@
 
   /* Ajusta el tamaño del logotipo */
   #logofoto {
+  box-sizing: border-box;  
   width: 100px; /* Ajusta el tamaño del logotipo según tus preferencias */
   height: auto; /* Mantén la relación de aspecto */
   }
 
   /* Alinea el título a la izquierda */
   header {
+  box-sizing: border-box;
   text-align: left;
   }
 
@@ -139,15 +137,27 @@
   color: #e60909;
   }
 
-  /* Estilo para los títulos en el footer */
-  h4 {
-  font-size: 20px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  }
-
-
 /* Estilo para la imagen */
 .costa {
   margin-top: 130px;
   max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+}
+
+/* Estilo para el botón "Log In" */
+.boton-login {
+  background-color: #0b65cd;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  margin-right: 1110px;
+}
+
+/* Efecto de cambio de color al pasar el mouse sobre el botón "Log In" */
+.boton-login:hover {
+  background-color: #11cc00;
 }
