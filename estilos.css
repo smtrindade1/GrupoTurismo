@@ -1,155 +1,153 @@
 
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      text-decoration: none;
-      text-align: center;
-      list-style: none;
-    }
-    
-      /* Estilo del cuerpo */
-      body {
-        font-size: 20px;
-        background-color: #0e2d3d;
-        font-family: 'Russo One', sans-serif;
-        margin: 0 auto;
 
-      }
-    
-    hr {
-      margin-bottom: 20px;
-    }
-    
-    /* Fuente para el título */
-    h1 {
-      font-family: 'Russo One', sans-serif;
-    }
-    
-    /* Enlaces no visitados */
-    a {
-      color: #0077FF;
-      text-decoration: none;
-    }
-  
-    
-  /* Estilo del encabezado */
-  header {
-    font-size: 1px;
-    background-color: #ffffff;
-    color: #070202;
-    padding: 0.1rem;
-    position: fixed; /* Establece el encabezado como fijo */
-    top: 0; /* Lo mantiene en la parte superior de la pantalla */
-    width: 100%; /* Hace que el encabezado ocupe todo el ancho de la pantalla */
-    z-index: 1; /* Asegura que el encabezado esté por encima del contenido */
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
   }
 
-    
-    /* Tamaño y transición de transformación para los logos */
-    #logofoto, #logos {
-      width: 150px;
-      height: 150px;
-      margin-right: 50px;
-      transition: transform 0.3s ease;
-    }
-    
-    /* Aplica la misma animación de rotación a todos los logos al pasar el mouse */
-    #logofoto:hover, #logos:hover {
-      transform: rotate(10deg);
-    }
-    
-    /* Estilo para la sección de búsqueda */
-    .busqueda-section {
-      font-family: 'Russo One', sans-serif;
-      font-weight: normal; /* Reduce la negrita de la fuente */
-    }
-    
-    /* Estilo para los enlaces con apariencia de botones */
-    .boton-enlace {
-      display:inline-block; 
-      padding: 10px 20px;
-      background-color: #000406;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 15px;
-      font-size: 18px;
-      margin: 10px;
-      margin-top: 20px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      
-    }
-    
-    /* Efecto de cambio de color al pasar el mouse sobre los botones */
-    .boton-enlace:hover {
-      background-color: #e60909;
-    }
-    
-   
+  /* Estilo del cuerpo */
+  body {
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+  }
 
-    
-    /* Estilo del contenedor del encabezado */
-  .header-container {
-    position: fixed absolute;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem;
-    max-width: 60%;
+  header {
+  background-color: #ffffff;
+  color: #070202;
+  padding: 0.1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+    padding: 10px; /* Añade espacio alrededor del encabezado */
+  }
+
+  /* Tamaño y transición de transformación para los logos */
+  #logofoto {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+  }
+
+  /* Aplica la misma animación de rotación a todos los logos al pasar el mouse */
+  #logofoto:hover, #logos:hover {
+  transform: rotate(10deg);
   }
 
   /* Estilo del título "Web-de-Turismo" */
   h1 {
     font-family: 'Russo One', sans-serif;
-    font-size: 24px; /* Ajusta el tamaño del título según tus preferencias */
-    margin-left: 20px; /* Añade un margen izquierdo para separarlo del logotipo */
+    font-size: 44px; /* Ajusta el tamaño del título según tus preferencias */
+    margin-left: 10px; /* Añade un margen izquierdo para separarlo del logotipo */
+    align-items: center;
+    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+    }
+    /* Estilo de los botones en el encabezado */
+.Menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Mueve los botones hacia la derecha del encabezado */
+  padding-left: 40%;
+}
+
+.boton-enlace {
+  background-color: #000406;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+}
+
+/* Añade un espacio entre los botones en dispositivos más pequeños */
+@media (max-width: 1000px) {
+  .Menu {
+    flex-direction: column; /* Cambia la dirección de los botones a columna */
+    align-items: flex-end; /* Alinea los botones a la derecha en la columna */
+    text-align: right; /* Alinea el texto a la derecha en la columna */
+  }
+
+  .boton-enlace {
+    margin: 5px; /* Espacio entre los botones en la columna */
+    padding: 10px 20px; /* Ajusta el relleno de los botones */
+  }
+}
+
+  .boton-enlace:hover {
+  background-color: #e60909;
+  color: #fff;
+  }
+
+  /* Estilo del contenedor del encabezado */
+  .header-container {
+  position: fixed absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  max-width: 60%;
   }
 
   /* Ajusta el tamaño del logotipo */
   #logofoto {
-    width: 100px; /* Ajusta el tamaño del logotipo según tus preferencias */
-    height: auto; /* Mantén la relación de aspecto */
+  width: 100px; /* Ajusta el tamaño del logotipo según tus preferencias */
+  height: auto; /* Mantén la relación de aspecto */
   }
 
   /* Alinea el título a la izquierda */
   header {
-    text-align: left;
+  text-align: left;
   }
 
   /* Estilo del footer */
   footer {
-    background-color: #000406;
-    color: #06b6f6;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #000406;
+  color: #06b6f6;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
   }
 
-/* Estilo para los contenedores de las secciones en el footer */
-.footer-container {
+  /* Estilo para los contenedores de las secciones en el footer */
+  .footer-container {
   display: flex;
   justify-content: space-around;
-}
+  }
 
 
-/* Estilo para los enlaces en el footer */
-ul li a {
+  /* Estilo para los enlaces en el footer */
+  ul li a {
   color: #fff;
   font-size: 14px;
   margin: 5px 5px;
   display: inline-block;
   transition: color 0.3s ease;
-}
+  }
 
-/* Efecto de cambio de color al pasar el mouse sobre los enlaces del footer */
-ul li a:hover {
+  /* Efecto de cambio de color al pasar el mouse sobre los enlaces del footer */
+  ul li a:hover {
   color: #e60909;
-}
+  }
 
-/* Estilo para los títulos en el footer */
-h4 {
+  /* Estilo para los títulos en el footer */
+  h4 {
   font-size: 20px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+
+/* Estilo para la imagen */
+.costa {
+  margin-top: 130px;
+  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
 }
