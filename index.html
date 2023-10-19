@@ -24,33 +24,51 @@
                     <a class="boton-enlace" href="#">Noroeste</a>
                     <a class="boton-enlace" href="#">Patagonia</a>
                 </div>
-                <a class="boton-login" href="#">Log In</a>
+                <a class="boton-login" id="login-button" href="#">Log In</a>
             </div>
         </header>
         
      
         <img class="costa" src="https://www.sturlaviajes.tur.ar/src/img_up/13102020.9.jpg" alt="qa" width="100%">
 
-       
-        <div class="contenedores-superior">
-            <div class="rectangulo-negro"></div>
-            <div class="rectangulo-negro"></div>
-        </div>
     
-        <section class="busqueda-section">
-            <!-- ... (contenido de la sección de búsqueda) -->
-        </section>
-    
-        <div class="contenedores-inferior">
-            <div class="rectangulo-negro"></div>
-            <div class="rectangulo-negro"></div>
-        </div>
-    
-    
-    
-        </section>
-    
+     <!-- formulario oculto -->
+<div class="registro-formulario" id="registro-formulario">
+    <h2>Registro</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
 
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+        <button type="submit">Registrarse</button>
+    </form>
+</div>
+
+<script>
+    // Obtén una referencia al botón "Log In" y al formulario de registro
+    const botonLogin = document.getElementById('login-button');
+    const formularioRegistro = document.getElementById('registro-formulario');
+    let formularioVisible = false; // Variable para controlar la visibilidad
+  
+    // Agrega un evento de clic al botón "Log In"
+    botonLogin.addEventListener('click', () => {
+      // Alterna la visibilidad del formulario al hacer clic en el botón "Log In"
+      formularioVisible = !formularioVisible;
+  
+      if (formularioVisible) {
+        formularioRegistro.style.display = 'block';
+      } else {
+        formularioRegistro.style.display = 'none';
+      }
+    });
+  </script>
+  
+ <script src="/Turismo/script.js"></script>       
     </body>
 
     <footer>
@@ -80,8 +98,5 @@
             </div>
         </div>
     </footer>
-
-    
-    <script src="/Turismo/script.js"></script>
 
     </html>

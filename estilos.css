@@ -1,163 +1,209 @@
-* {
-  padding: 0;
-  text-decoration: none;
-  text-align: center;
-  list-style: none;
-  white-space: nowrap
-  }
+  * {
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    white-space: nowrap
+    }
 
-  /* Estilo del cuerpo */
-  body {
-    font-size: 20px;
-    font-family: 'Russo One', sans-serif;
-  }
+    /* Estilo del cuerpo */
+    body {
+      font-size: 20px;
+      font-family: 'Russo One', sans-serif;
+    }
 
-  header {
-  background-color: #ffffff;
-  color: #070202;
-  position: fixed;
-  top: 0;
-  display: flex;
-  }
+    header {
+    background-color: #ffffff;
+    color: #070202;
+    position: fixed;
+    top: 0;
+    display: flex;
+    }
 
-  /* Tamaño y transición de transformación para los logos */
-  #logofoto {
-  width: 150px;
-  height: 150px;
-  
-  
-  transition: transform 0.3s ease;
-  }
+    /* Tamaño y transición de transformación para los logos */
+    #logofoto {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;  
+    width: 100px; /* Ajusta el tamaño del logotipo según tus preferencias */
+    height: auto; /* Mantén la relación de aspecto */
+    margin-right: 10px;
+    }
 
-  /* Aplica la misma animación de rotación a todos los logos al pasar el mouse */
-  #logofoto:hover, #logos:hover {
-  transform: rotate(10deg);
-  }
+    /* Aplica la misma animación de rotación a todos los logos al pasar el mouse */
+    #logofoto:hover, #logos:hover {
+    transform: rotate(10deg);
+    }
 
-  /* Estilo del título "Web-de-Turismo" */
-h1 {
-    font-family: 'Russo One', sans-serif;
-    font-size: 44px; /* Ajusta el tamaño del título según tus preferencias */
-    align-items: center;
-    white-space: nowrap; /* Evita que el texto se divida en dos líneas */
-    margin-right: 140px;
-     }
+    /* Estilo del título "Web-de-Turismo" */
+  h1 {
+      font-family: 'Russo One', sans-serif;
+      font-size: 44px; /* Ajusta el tamaño del título según tus preferencias */
+      align-items: center;
+      white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+      margin-right: 140px;
+      }
 
-    /* Estilo de los botones en el encabezado */
-.Menu {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* Mueve los botones hacia la derecha del encabezado */
-  margin-right: 300px;
-}
-
-.boton-enlace {
-  background-color: #000406;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 15px;
-  font-size: 18px;
-  margin: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  padding: 10px 20px;
-}
-
-/* Añade un espacio entre los botones en dispositivos más pequeños */
-@media (max-width: 1000px) {
+      /* Estilo de los botones en el encabezado */
   .Menu {
-    flex-direction: column; /* Cambia la dirección de los botones a columna */
-    align-items: flex-end; /* Alinea los botones a la derecha en la columna */
-    text-align: right; /* Alinea el texto a la derecha en la columna */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Mueve los botones hacia la derecha del encabezado */
+    margin-right: 300px;
   }
 
   .boton-enlace {
-    margin: 5px; /* Espacio entre los botones en la columna */
-    padding: 10px 20px; /* Ajusta el relleno de los botones */
-  }
-}
-
-  .boton-enlace:hover {
-  background-color: #e60909;
-  color: #fff;
-  }
-
-  /* Estilo del contenedor del encabezado */
-  .header-container {
-  position: fixed absolute;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 1rem;
-  max-width: 60%;
+    background-color: #000406;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
   }
 
-  /* Ajusta el tamaño del logotipo */
-  #logofoto {
-  box-sizing: border-box;  
-  width: 100px; /* Ajusta el tamaño del logotipo según tus preferencias */
-  height: auto; /* Mantén la relación de aspecto */
+  /* Añade un espacio entre los botones en dispositivos más pequeños */
+  @media (max-width: 1000px) {
+    .Menu {
+      flex-direction: column; /* Cambia la dirección de los botones a columna */
+      align-items: flex-end; /* Alinea los botones a la derecha en la columna */
+      text-align: right; /* Alinea el texto a la derecha en la columna */
+    }
+
+    .boton-enlace {
+      margin: 5px; /* Espacio entre los botones en la columna */
+      padding: 10px 20px; /* Ajusta el relleno de los botones */
+    }
   }
 
-  /* Alinea el título a la izquierda */
-  header {
-  box-sizing: border-box;
-  text-align: left;
+    .boton-enlace:hover {
+    background-color: #e60909;
+    color: #fff;
+    }
+
+    /* Estilo del contenedor del encabezado */
+    .header-container {
+    position: fixed absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    max-width: 60%;
+    }
+
+    /* Alinea el título a la izquierda */
+    header {
+    box-sizing: border-box;
+    text-align: left;
+    }
+
+    /* Estilo del footer */
+    footer {
+    background-color: #000406;
+    color: #06b6f6;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    }
+
+    /* Estilo para los contenedores de las secciones en el footer */
+    .footer-container {
+    display: flex;
+    justify-content: space-around;
+    }
+
+
+    /* Estilo para los enlaces en el footer */
+    ul li a {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 5px;
+    display: inline-block;
+    transition: color 0.3s ease;
+    }
+
+    /* Efecto de cambio de color al pasar el mouse sobre los enlaces del footer */
+    ul li a:hover {
+    color: #e60909;
+    }
+
+  /* Estilo para la imagen */
+  .costa {
+    margin-top: 130px;
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
   }
 
-  /* Estilo del footer */
-  footer {
-  background-color: #000406;
-  color: #06b6f6;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  /* Estilo para el botón "Log In" */
+  .boton-login {
+    background-color: #0b65cd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    margin-right: 1110px;
   }
 
-  /* Estilo para los contenedores de las secciones en el footer */
-  .footer-container {
-  display: flex;
-  justify-content: space-around;
+  /* Efecto de cambio de color al pasar el mouse sobre el botón "Log In" */
+  .boton-login:hover {
+    background-color: #11cc00;
   }
 
-
-  /* Estilo para los enlaces en el footer */
-  ul li a {
-  color: #fff;
-  font-size: 14px;
-  margin: 5px 5px;
-  display: inline-block;
-  transition: color 0.3s ease;
+  /* Estilo del formulario de registro */
+  /* Estilo del formulario de registro */
+  .registro-formulario {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 500px; /* Cambia el ancho a lo que necesites */
+    /* Ajusta la altura del formulario según tus necesidades */
+    height: auto;
+    max-height: 80%; /* Limita la altura máxima del formulario si es necesario */
   }
 
-  /* Efecto de cambio de color al pasar el mouse sobre los enlaces del footer */
-  ul li a:hover {
-  color: #e60909;
+  .registro-formulario h2 {
+    font-size: 24px;
   }
 
-/* Estilo para la imagen */
-.costa {
-  margin-top: 130px;
-  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
-}
+  /* Resto del estilo del formulario se mantiene igual */
 
-/* Estilo para el botón "Log In" */
-.boton-login {
-  background-color: #0b65cd;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 15px;
-  font-size: 18px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  white-space: nowrap;
-  margin-right: 1110px;
-}
+  .registro-formulario label {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-/* Efecto de cambio de color al pasar el mouse sobre el botón "Log In" */
-.boton-login:hover {
-  background-color: #11cc00;
-}
+  .registro-formulario input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .registro-formulario button {
+    background-color: #0b65cd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .registro-formulario button:hover {
+    background-color: #11cc00;
+  }
