@@ -10,6 +10,7 @@
     body {
       font-size: 20px;
       font-family: 'Russo One', sans-serif;
+      background-color: #f1f4d9;
     }
 
     header {
@@ -17,7 +18,6 @@
     color: #070202;
     position: fixed;
     top: 0;
-    display: flex;
     }
 
     /* Tamaño y transición de transformación para los logos */
@@ -25,8 +25,7 @@
     width: 150px;
     height: 150px;
     transition: transform 0.3s ease;
-    box-sizing: border-box;  
-    width: 100px; /* Ajusta el tamaño del logotipo según tus preferencias */
+    width: 110px; /* Ajusta el tamaño del logotipo según tus preferencias */
     height: auto; /* Mantén la relación de aspecto */
     margin-right: 10px;
     }
@@ -39,10 +38,11 @@
     /* Estilo del título "Web-de-Turismo" */
   h1 {
       font-family: 'Russo One', sans-serif;
-      font-size: 44px; /* Ajusta el tamaño del título según tus preferencias */
+      font-size: 30px; /* Ajusta el tamaño del título según tus preferencias */
       align-items: center;
-      white-space: nowrap; /* Evita que el texto se divida en dos líneas */
-      margin-right: 140px;
+      white-space: pre-line;
+      margin-left: 5px;
+      margin-right: 10px;
       }
 
       /* Estilo de los botones en el encabezado */
@@ -51,7 +51,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end; /* Mueve los botones hacia la derecha del encabezado */
-    margin-right: 300px;
   }
 
   .boton-enlace {
@@ -60,10 +59,11 @@
     text-decoration: none;
     border-radius: 15px;
     font-size: 18px;
-    margin: 10px;
+    margin: 05px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     padding: 10px 20px;
+
   }
 
   /* Añade un espacio entre los botones en dispositivos más pequeños */
@@ -101,22 +101,46 @@
     text-align: left;
     }
 
+    
+
+  #paisaje{
+    width: 20rem;
+    border: #ccc;
+    
+  }
+  .imagencard{
+    width: 30rem;
+    margin-top: 200px; 
+  }
+
+  
+  h2 {  
+    font-family: 'Russo One', sans-serif!important;
+    color: #3f56ea!important;
+    font-size: 44px!important; 
+    align-items: center!important;
+    }
+
     /* Estilo del footer */
     footer {
     background-color: #000406;
     color: #06b6f6;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+  
     width: 100%;
+    margin-top: 200px;
     }
 
     /* Estilo para los contenedores de las secciones en el footer */
     .footer-container {
-    display: flex;
+      display: flex;
     justify-content: space-around;
     }
 
+    .redes-sociales a {
+      margin: 0 10px; /* Agrega margen horizontal para separar los íconos */
+    }
+    
 
     /* Estilo para los enlaces en el footer */
     ul li a {
@@ -132,11 +156,6 @@
     color: #e60909;
     }
 
-  /* Estilo para la imagen */
-  .costa {
-    margin-top: 130px;
-    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
-  }
 
   /* Estilo para el botón "Log In" */
   .boton-login {
@@ -151,6 +170,7 @@
     white-space: nowrap;
     margin-right: 1110px;
     z-index: 3; /* Asegura que el botón tenga un z-index superior */
+    margin-left: 10px;
     }
 
 .formulario-abierto .boton-login {
