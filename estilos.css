@@ -101,16 +101,11 @@
     text-align: left;
     }
 
-    
 
-  #paisaje{
-    width: 20rem;
-    border: #ccc;
-    
-  }
-  .imagencard{
+  .imagencard {
     width: 30rem;
     margin-top: 200px; 
+    
   }
 
   
