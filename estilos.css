@@ -11,6 +11,7 @@
       font-size: 20px;
       font-family: 'Russo One', sans-serif;
       background-color: #f1f4d9;
+      position: relative;
     }
 
     header {
@@ -107,6 +108,10 @@
     margin-top: 200px; 
     
   }
+  .imagencard1 {
+    width: 30rem;
+
+  }
 
   
   h2 {  
@@ -120,10 +125,8 @@
     footer {
     background-color: #000406;
     color: #06b6f6;
-    position: absolute;
-  
+    bottom: 0;
     width: 100%;
-    margin-top: 200px;
     }
 
     /* Estilo para los contenedores de las secciones en el footer */
@@ -260,3 +263,18 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
+
+.info {
+  padding-top: 11%;
+
+}
+
+.foto-info {
+  width: 60%;
+  margin-top: 2%;
+margin-bottom: 15%;}
+
+.multiline {
+    white-space: pre-line;
+  }
+  
