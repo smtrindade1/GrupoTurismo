@@ -19,9 +19,9 @@ function provincia() {
         $selectProvincias.nextElementSibling.innerHTML = `Error: ${error.status}: ${message}`;
     })
 }
-
+ 
 $d.addEventListener("DOMContentLoaded", provincia)
-
+  
 function municipio(provincia) {
     fetch(`https://apis.datos.gob.ar/georef/api/municipios?provincia=${provincia}&max=1535`)
     .then(res => res.ok ? res.json() : Promise.reject(res))

@@ -7,7 +7,7 @@ botonLogin.addEventListener('click', () => {
   formularioRegistro.style.top = '0'; // Cambia la propiedad 'top' para mostrar el formulario
   overlay.style.display = 'block';
 });
-
+  
 // Agrega un evento de clic al overlay
 overlay.addEventListener('click', (e) => {
   if (e.target === overlay) {
