@@ -1,6 +1,6 @@
   * {
     padding: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     text-align: center;
     list-style: none;
     white-space: nowrap
@@ -14,12 +14,13 @@
       position: relative;
     }
 
-    header {
-    background-color: #ffffff;
-    color: #070202;
-    position: fixed;
-    top: 0;
-    }
+      /* Estilo de los botones en el encabezado */
+      .Menu {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Mueve los botones hacia la derecha del encabezado */
+      }
 
     /* Tamaño y transición de transformación para los logos */
     #logofoto {
@@ -46,13 +47,7 @@
       margin-right: 10px;
       }
 
-      /* Estilo de los botones en el encabezado */
-  .Menu {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Mueve los botones hacia la derecha del encabezado */
-  }
+
 
   .boton-enlace {
     background-color: #000406;
@@ -88,7 +83,7 @@
 
     /* Estilo del contenedor del encabezado */
     .header-container {
-    position: fixed absolute;
+    position: fixed absolute !important ;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -100,8 +95,12 @@
     header {
     box-sizing: border-box;
     text-align: left;
+    background-color: #ffffff;
+    color: #070202;
+    position: fixed !important;
+    z-index: 1;
+    top: 0;
     }
-
 
   .imagencard {
     width: 30rem;
@@ -125,14 +124,14 @@
     footer {
     background-color: #000406;
     color: #06b6f6;
-    bottom: 0;
+    bottom: 0 !important;
     width: 100%;
     }
 
     /* Estilo para los contenedores de las secciones en el footer */
     .footer-container {
-      display: flex;
-    justify-content: space-around;
+      display: flex !important;
+    justify-content: space-around !important;
     }
 
     .redes-sociales a {
@@ -181,7 +180,6 @@
   .boton-login:hover {
     background-color: #11cc00;
   }
-/* ... Tu código anterior ... */
 
 /* Estilo del formulario de registro */
 .registro-formulario {
@@ -278,3 +276,73 @@ margin-bottom: 15%;}
     white-space: pre-line;
   }
   
+
+  /* Estilo para el carrusel */
+.carousel {
+  margin-top: 150px; /* Ajusta el margen superior según tus necesidades */
+  margin-bottom: 120px;
+}
+
+.carousel-indicators {
+  bottom: 110px; /* Coloca los indicadores en la parte inferior */
+}
+
+
+.carousel-inner {
+  border-radius: 4110px; /* Borde redondeado para el carrusel */
+  width: 100%;
+}
+
+.carousel-item {
+  text-align: center; /* Alineación del contenido del carrusel */
+
+}
+
+.carousel-item img {
+  margin: 0 auto; /* Centra horizontalmente */
+  max-height: 100%; /* Evita que las imágenes se salgan del carrusel */
+}
+
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para las leyendas */
+  color: #fff; /* Color del texto de la leyenda */
+  border-radius: 115px; /* Borde redondeado para la leyenda */
+  padding: 10px; /* Espaciado interno de la leyenda */
+}
+
+.carousel-caption h3 {
+  font-size: 44px; /* Ajusta el tamaño del título según tus preferencias */
+}
+
+/* Estilo para los controles de navegación (flechas) en dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-control-prev, .carousel-control-next {
+      font-size: 20px; /* Ajusta el tamaño de los íconos en dispositivos móviles */
+  }
+}
+
+.d-block {
+  width: 70%;
+
+}
+/* Estilos específicos para transporte.html */
+body.transporte { 
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+  background-color: #f1f4d9;
+}
+
+.carousel-inner .carousel-item {
+  transition: transform 1ms ease;
+}
+
+.header-container.transporte {
+      position: fixed absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      max-width: 160%;
+      }
+      
