@@ -19,7 +19,7 @@ function provincia() {
         $selectProvincias.nextElementSibling.innerHTML = `Error: ${error.status}: ${message}`;
     })
 }
- 
+  
 $d.addEventListener("DOMContentLoaded", provincia)
   
 function municipio(provincia) {
